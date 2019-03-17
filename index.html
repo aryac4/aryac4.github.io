@@ -13,17 +13,22 @@
    
 <html>
 <body>
+	import java.util.Scanner;
 
-  <p> Add 5 items to your to-do list for today </p>
-<input type='text' id='idea' />
-<input type='button' value='add to list' id='add' />
-<ul id='list'></ul>
-<ol>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-  <li></li>
-</ol>
+class Input {
+    public static void main(String[] args) {
+    	
+    	Scanner input = new Scanner(System.in);
+  System.out.print("Enter a task: ");
+    	String myString = input.next();
+    	System.out.println("1. " + myString);
+  Scanner input = new Scanner(System.in);
+  System.out.print("Enter how much time you will need to complete this task: ");
+    	String myString = input.next();
+    	System.out.println("Your task should be completed in " + myString);
+    }
+}
+ 
 
 </body>
 </html>
